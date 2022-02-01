@@ -1,0 +1,97 @@
+doctype html 
+html 
+   head 
+      title Template_1 
+      meta(charset='utf-8')
+      meta(name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+      link(href='style.css' rel='stylesheet')
+   body
+      header(id='1').header
+         .header__logo 
+            img(src='img/header_logo.png' alt='header_logo')
+         .header__title <span>Clear, smart, attractive design</span> <br> for your app, logo, website
+         a(href='#2').header__link read more
+      main
+         nav.menu 
+            a.menu__link(href='#1').active HOME                     
+            a.menu__link(href='#2') ABOUT US
+            a.menu__link(href='#3') PORTFOLIO
+            a.menu__link(href='#4') CONTACT
+         .about(id='2')
+            .title ABOUT
+            .about__text We specialize in contemporary, functional, and stunning websites with design that really brings that "WOW" factor.<br> In our design process, we make sure to stay one step ahead of the latest trends,<br> never forgetting to abide by key web standards.
+            .about__items
+               .item
+                  .item__image
+                     img(src='img/about/01.png' alt='item_1') 
+                  .item__title WEB
+                  .item__text We tend to deliver unique and<br> functional design, through<br> innovation and creativity.
+               .item
+                  .item__image
+                     img(src='img/about/02.png' alt='item_2') 
+                  .item__title iOS AND ANDROID
+                  .item__text We seek to bring new businesses and customers<br> closer together through valuable<br> insights and proper targeting.
+               .item
+                  .item__image
+                     img(src='img/about/03.png' alt='item_3') 
+                  .item__title MARKETING
+                  .item__text We’ll help you establish the right goals<br> and build the right paths. Success depends<br> on setting the right intention.
+         .portfolio(id='3')
+            .title PORTFOLIO
+            nav.menu
+               a.menu__link(href='#').active ALL
+               a.menu__link(href='#') WEB
+               a.menu__link(href='#') APPS
+               a.menu__link(href='#') OTHER         
+            .portfolio__image
+                  img(src='img/portfolio_img.jpg' alt='portfolio_img')
+                  img(src='img/portfolio_img.jpg' alt='portfolio_img')
+                  img(src='img/portfolio_img.jpg' alt='portfolio_img')   
+                  img(src='img/portfolio_img.jpg' alt='portfolio_img')
+                  img(src='img/portfolio_img.jpg' alt='portfolio_img')
+                  img(src='img/portfolio_img.jpg' alt='portfolio_img')
+            a.portfolio__link READ MORE
+         .partners 
+            .partners__text Our partners
+            .partners__image 
+               img(src="img/partners/01.png", alt="partner")
+               img(src="img/partners/02.png", alt="partner")
+               img(src="img/partners/03.png", alt="partner")
+               img(src="img/partners/04.png", alt="partner")
+         .contact(id='4')
+            .title CONTACT
+            .contact__body
+               form(action='#').contact__form 
+                  fieldset.contact__fieldset
+                     .contact__row
+                        .contact__column
+                           .contact__label your name
+                           label(for='name').contact__label
+                           input(type='text' id='name').contact__input
+                        .contact__column
+                           .contact__label your e-mail
+                           label(for='e-mail').contact__label 
+                           input(type='text' id='e-mail').contact__input
+                     label(for='message').contact__label message
+                     textarea(id='message').contact__textarea
+                     input(type='submit' value='send').contact__submit
+               .contact__info 
+                  .contact__text Have an idea for a project? Just looking to <br> explore and see the possibilities? <br> I'm here to help.
+                  .contact__name Postma Elena
+                  .contact__social
+                     .contact__icon-1
+                        a(href='#')
+                           img(src='img/facebook.png' alt='fb')
+                     .contact__icon-2
+                        a(href='#')
+                           img(src='img/in.png' alt='in')
+                  .contact__mail e-mail: <span> postma.elena@gmail.com </span>
+      footer.footer 
+         .footer__logo
+            img(src='img/footer_logo.png' alt='footer_logo')
+         .footer__menu 
+            a.footer_link(href='#') Home         
+            a.footer_link(href='#') Facebook
+            a.footer_link(href='#') Linkedin
+            a.footer_link(href='#') Contact 
+         .footer__text © 2015. All Rights Reserved

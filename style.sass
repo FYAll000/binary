@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap')
+@import url('reset.css')
+body
+   font-family: Lato 
+.header
+   background: url('img/bg_header.jpg') no-repeat
+   background-size: cover
+   height: 100vh
+   display: flex
+   justify-content: space-between
+   flex-direction: column
+   align-items: center
+.header__logo
+   margin-top: 10vh
+.header__title
+   text-align: center
+   font-size: 34px
+   line-height: 40px
+   font-weight: 900
+   position: relative
+   color: #fff
+   span
+      text-transform: uppercase
+   letter-spacing: 0.16em
+   @media (max-width: 375px)
+      font-size: 20px
+   &::after
+      content: ''
+      width: 100px
+      height: 2.5px
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      background: #fff
+      margin-top: 50px
+.header__link
+   font-size: 16px
+   letter-spacing: 0.06em
+   border: 2px solid #fff
+   color: #fff
+   text-decoration: none
+   position: relative
+   transition: all 1s ease-out
+   text-transform: uppercase
+   padding: 15px 40px
+   margin-bottom: 10vh
+   &:hover
+      background-color: #a5b1c7
+   &::after
+      content: ''
+      width: 17px
+      height: 10px
+      background: url('img/arrow_down.png')
+      position: absolute
+      left: 45%
+      top: 150%
+.footer
+   display: flex
+   flex-direction: column
+   align-items: center
+   justify-content: space-between
+   height: 30vh
+   background-color: #3c3c3c
+.footer__logo
+   margin-top: 5vh
+.footer__menu
+   margin: 10px 0
+.footer_link
+   text-decoration: none
+   font-size: 14px
+   color: #a4a4a4
+   padding: 0 10px
+.footer__text
+   font-family: Myriad Pro
+   font-size: 14px
+   color: #6c6c6c
+   margin-bottom: 5vh
+.menu
+   display: flex
+   justify-content: center
+.menu__link
+   color: #3c3c3c
+   font-size: 15px
+   margin: 25px 10px
+   &:hover
+      border-bottom: 1.5px solid #ada074
+   @media (max-width: 375px)
+      margin: 15px 5px
+.active
+   font-weight: 700
+   color: #ada074
+.about 
+   display: flex
+   flex-direction: column
+   align-items: center
+   margin: 30px 5px 0px 5px
+.title
+   font-size: 34px
+   letter-spacing: 0.16em
+   font-weight: 700
+   position: relative
+   &::after
+      content: ''
+      width: 85px
+      height: 1.5px
+      background: #000
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      margin-top: 50px
+.about__text
+   text-align: center
+   font-size: 14px
+   margin-top: 30px
+   line-height: 25px
+   font-weight: 300
+   color: #868585
+.about__items
+   @media (max-width: 650px)
+      flex-direction: column
+   display: flex
+   margin: -15px
+   flex: 1 1 33%
+.item
+   padding: 15px
+   display: flex
+   flex: 0 1 33%
+   flex-direction: column
+   align-items: center
+   margin-top: 30px
+   @media (max-width: 650px)
+      margin-top: 0px
+.item__image
+   border: 1px solid #ada074
+   border-radius: 50%
+   width: 90px
+   height: 90px
+   display: flex
+   justify-content: center
+   align-items: center
+.item__title
+   font-size: 22px
+   letter-spacing: 0.16em
+   white-space: nowrap
+   margin-top: 10px
+.item__text
+   font-size: 14px
+   line-height: 26px
+   font-weight: 300
+   color: #868585
+   text-align: center
+.portfolio
+   margin-top: 10vh
+   padding-top: 10vw
+   display: flex
+   flex-direction: column
+   align-items: center
+   nav
+      margin-top: 20px
+   background: #f3f3f3
+.portfolio__image
+   display: flex
+   margin: 0 10vw
+   flex-wrap: wrap
+   flex-direction: row
+   img
+      @media (max-width: 600px)
+         width: 90vw
+      flex: 1 1 49%
+      margin: 5px
+.portfolio__link
+   line-height: 1.2
+   letter-spacing: 0.06em
+   border: 1px solid #000
+   transition: all 1s ease-out
+   padding: 10px 50px
+   margin: 5vh 0
+   &:hover
+      background-color: #617396
+.partners 
+   background: url('img/partners/bg.jpg')
+   background-size: cover
+   display: flex
+   flex-direction: column
+   align-items: center
+   padding: 5% 30%
+.partners__text
+   font-size: 30.4px
+   line-height: 1.2
+   font-weight: 300
+   letter-spacing: 0.06em
+   color: #ffffff
+   opacity: 0.5
+   white-space: nowrap
+.partners__image
+   display: flex
+   flex-direction: row
+   justify-content: center
+   margin-top: 10%
+   img
+      margin: 25%
+      @media (max-width: 650px)
+         margin: 10px
+.contact 
+   display: flex
+   flex-direction: column
+   align-items: center
+   padding: 50px 0
+.contact__label
+   font-size: 14px
+   font-weight: 700
+   flex: 0 1 50%
+   text-transform: uppercase
+   letter-spacing: 0.06em
+   margin-bottom: 5px
+.contact__text
+   font-size: 14px
+   line-height: 26px
+   margin-top: 30px
+   font-weight: 300
+.contact__name
+   font-size: 14px
+   font-weight: 700
+   margin-top: 15px
+.contact__mail
+   font-size: 14px
+   font-weight: 300
+   span
+      font-weight: 700
+.contact__icon-1
+   border: 1px solid #000
+   border-radius: 50%
+   width: 35px
+   height: 35px
+   transition: all 1s ease-out
+   &:hover
+      background-color: #617396
+   display: flex
+   justify-content: center
+   align-items: center
+   margin-right: 5px
+.contact__icon-2
+   border: 1px solid #000
+   border-radius: 50%
+   width: 35px
+   transition: all 1s ease-out
+   height: 35px
+   display: flex
+   &:hover
+      background-color: #617396
+   justify-content: center
+   align-items: center
+   margin-right: 5px
+.contact__body
+   display: flex
+   flex-direction: row
+   justify-content: center
+.contact__form
+   flex: 1 1 50%
+.contact__info 
+   flex: 1 1 50%
+   @media (max-width: 700px)
+      display: none
+   margin: 40px 0 0 40px
+.contact__fieldset
+   display: flex
+   flex-direction: column
+   margin-top: 70px
+.contact__social
+   display: flex
+   margin: 15px 0
+   flex-direction: row
+.contact__input
+   border-top: 1px solid #000
+   background-color: #f8f7f7
+   width: 160px
+   height: 35px
+.contact__textarea
+   border-top: 1px solid #000
+   background-color: #f8f7f7
+   width: 380px
+   height: 115px
+.contact__submit
+   font-size: 14px
+   font-weight: 700
+   text-transform: uppercase
+   letter-spacing: 0.06em
+   transition: all 1s ease-out
+   padding: 5px
+   background-color: #fff
+   align-self: flex-end
+   margin-top: 20px
+   &:hover
+      background-color: #617396
+.contact__row
+   display: flex
+   flex-direction: row
+   justify-content: space-between
